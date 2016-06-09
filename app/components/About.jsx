@@ -14,6 +14,7 @@ var About = (props) => {
   return (
     <div>
       <h3>About</h3>
+      <p>Example for https://fanatics.udemy.com/the-complete-react-web-app-developer-course</p>
     </div>
   );
 }

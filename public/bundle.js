@@ -1514,7 +1514,7 @@
 /* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\nvar React = __webpack_require__(1);\n\n// var About = React.createClass({\n//   render: function() {\n//     return (\n//       <div>\n//         <h3>About</h3>\n//       </div>\n//     );\n//   }\n// });\n\nvar About = function About(props) {\n  return React.createElement(\n    'div',\n    null,\n    React.createElement(\n      'h3',\n      null,\n      'About'\n    )\n  );\n};\n\nmodule.exports = About;\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/components/About.jsx\n ** module id = 245\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/components/About.jsx?");
+	eval("'use strict';\n\nvar React = __webpack_require__(1);\n\n// var About = React.createClass({\n//   render: function() {\n//     return (\n//       <div>\n//         <h3>About</h3>\n//       </div>\n//     );\n//   }\n// });\n\nvar About = function About(props) {\n  return React.createElement(\n    'div',\n    null,\n    React.createElement(\n      'h3',\n      null,\n      'About'\n    ),\n    React.createElement(\n      'p',\n      null,\n      'Example for https://fanatics.udemy.com/the-complete-react-web-app-developer-course'\n    )\n  );\n};\n\nmodule.exports = About;\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/components/About.jsx\n ** module id = 245\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/components/About.jsx?");
 
 /***/ },
 /* 246 */
