@@ -1436,7 +1436,7 @@
 /* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("/* WEBPACK VAR INJECTION */(function($) {'use strict';\n\nvar React = __webpack_require__(8);\n\nvar ErrorModal = React.createClass({\n  displayName: 'ErrorModal',\n\n  getDefaultProps: function getDefaultProps() {\n    return {\n      title: 'Error'\n    };\n  },\n  propTypes: {\n    title: React.PropTypes.string,\n    message: React.PropTypes.string.isRequired\n  },\n  componentDidMount: function componentDidMount() {\n    var modal = new Foundation.Reveal($('#error-modal'));\n    modal.open();\n  },\n  render: function render() {\n    var _props = this.props;\n    var title = _props.title;\n    var message = _props.message;\n\n\n    return React.createElement(\n      'div',\n      { id: 'error-modal', className: 'reveal tiny text-center', 'data-reveal': '' },\n      React.createElement(\n        'h4',\n        null,\n        title\n      ),\n      React.createElement(\n        'p',\n        null,\n        message\n      ),\n      React.createElement(\n        'p',\n        null,\n        React.createElement(\n          'button',\n          { className: 'button hollow', 'data-close': '' },\n          'Okay'\n        )\n      )\n    );\n  }\n});\n\nmodule.exports = ErrorModal;\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/components/ErrorModal.jsx\n ** module id = 232\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/components/ErrorModal.jsx?");
+	eval("/* WEBPACK VAR INJECTION */(function($) {'use strict';\n\nvar React = __webpack_require__(8);\nvar ReactDOM = __webpack_require__(165);\nvar ReactDOMServer = __webpack_require__(261);\n\nvar ErrorModal = React.createClass({\n  displayName: 'ErrorModal',\n\n  getDefaultProps: function getDefaultProps() {\n    return {\n      title: 'Error'\n    };\n  },\n  propTypes: {\n    title: React.PropTypes.string,\n    message: React.PropTypes.string.isRequired\n  },\n  componentDidMount: function componentDidMount() {\n    var _props = this.props;\n    var title = _props.title;\n    var message = _props.message;\n\n    var modalMarkup = React.createElement(\n      'div',\n      { id: 'error-modal', className: 'reveal tiny text-center', 'data-reveal': '' },\n      React.createElement(\n        'h4',\n        null,\n        title\n      ),\n      React.createElement(\n        'p',\n        null,\n        message\n      ),\n      React.createElement(\n        'p',\n        null,\n        React.createElement(\n          'button',\n          { className: 'button hollow', 'data-close': '' },\n          'Okay'\n        )\n      )\n    );\n\n    var $modal = $(ReactDOMServer.renderToString(modalMarkup));\n\n    $(ReactDOM.findDOMNode(this)).html($modal);\n\n    var modal = new Foundation.Reveal($('#error-modal'));\n    modal.open();\n  },\n  render: function render() {\n    return React.createElement('div', null);\n  }\n});\n\nmodule.exports = ErrorModal;\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/components/ErrorModal.jsx\n ** module id = 232\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/components/ErrorModal.jsx?");
 
 /***/ },
 /* 233 */
@@ -1605,6 +1605,12 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	eval("exports = module.exports = __webpack_require__(257)();\n// imports\n\n\n// module\nexports.push([module.id, \".page-title {\\n  margin-top: 2.5rem;\\n  margin-bottom: 2.5rem; }\\n\\ninput[type=search] {\\n  box-shadow: none; }\\n\", \"\"]);\n\n// exports\n\n\n/*****************\n ** WEBPACK FOOTER\n ** ./~/css-loader!./~/sass-loader!./app/styles/app.scss\n ** module id = 260\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/styles/app.scss?./~/css-loader!./~/sass-loader");
+
+/***/ },
+/* 261 */
+/***/ function(module, exports, __webpack_require__) {
+
+	eval("'use strict';\n\nmodule.exports = __webpack_require__(155);\n\n\n/*****************\n ** WEBPACK FOOTER\n ** ./~/react-dom/server.js\n ** module id = 261\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./~/react-dom/server.js?");
 
 /***/ }
 /******/ ]);
